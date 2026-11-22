@@ -11,11 +11,11 @@ html, body { margin: 0; background: var(--field) url("field.jpg") center / cover
 /* three reels, nothing around them: on a phone one under the other, each the height of the screen;
    wider, side by side */
 main { display: grid; gap: 6vh; justify-items: center; padding: 6vh 16px 10vh; }
-video { display: block; height: min(86svh, 1400px); aspect-ratio: 9 / 16; max-width: 100%; border-radius: 22px; background: #050a3c;
+video { display: block; width: min(100%, calc(86svh * 9 / 16), 788px); height: auto; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 22px; background: #050a3c;
   box-shadow: 0 30px 60px -20px rgba(4, 8, 60, .7); }
 @media (min-width: 900px) {
   main { grid-template-columns: repeat(3, auto); justify-content: center; align-items: center; min-height: 100svh; box-sizing: border-box; gap: 3vw; }
-  video { height: min(82svh, 1200px); }
+  video { width: min(28vw, calc(82svh * 9 / 16)); }
 }
 </style>
 </head>
