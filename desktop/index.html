@@ -221,8 +221,8 @@ body { margin: 0; background: var(--ink); color: var(--paper); font-family: var(
 .ds.saba { background: #1d2ed2; }
 .sstage { position: relative; z-index: 1; width: min(100vw, calc((100vh - var(--bar)) * 16 / 9)); aspect-ratio: 16 / 9; }
 .sstage > svg.desk { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 0; overflow: visible; }
-.rb.wide { transform: translateX(-50%); }
-.rb.wide:active { transform: translateX(-50%) scale(.94); }
+.rb.wide { transform: translateX(-50%) scale(1.35); transform-origin: 50% 0; }
+.rb.wide:active { transform: translateX(-50%) scale(1.28); }
 .dbtns { position: absolute; inset: auto 0 9vh; display: flex; gap: 14px; justify-content: center; z-index: 2; }
 .tag { position: absolute; z-index: 3; inset: auto 28px 24px auto; margin: 0; font-size: 14px; color: rgba(243, 245, 255, .86);
   background: rgba(4, 7, 44, .34); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 8px 14px; border-radius: 99px; }
