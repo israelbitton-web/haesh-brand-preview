@@ -231,7 +231,9 @@ body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-even
 .sc .plate.namef::after { display: none; }
 .fr:not(.clear) { -webkit-mask-image: linear-gradient(transparent, #000 76px, #000 calc(100% - 76px), transparent); mask-image: linear-gradient(transparent, #000 76px, #000 calc(100% - 76px), transparent); }
 /* the Saba melts into the field below him (his coat is not cut by the frame); the button stays whole on top */
-.sabaf .stack { -webkit-mask-image: linear-gradient(to top, transparent 7%, #000 36%); mask-image: linear-gradient(to top, transparent 7%, #000 36%); }
+/* (a mask on the whole stack would clip his wide light at the stack's box: each layer fades in its own box) */
+.sabaf .stack .fig { -webkit-mask-image: linear-gradient(to top, transparent 7%, #000 36%); mask-image: linear-gradient(to top, transparent 7%, #000 36%); }
+.sabaf .stack .light { -webkit-mask-image: linear-gradient(to top, transparent 5%, #000 24%); mask-image: linear-gradient(to top, transparent 5%, #000 24%); }
 .sc h2, .sc .cap, .sc header { text-shadow: 0 1px 14px rgba(3, 6, 44, .75), 0 0 3px rgba(3, 6, 44, .5); }
 .sc .lf-card.sq .bars { height: 40px; }
 .sc .lf-card.sq .bars i { height: 40px; }
